@@ -29,13 +29,13 @@ public class Menu_principal extends javax.swing.JFrame {
 
         jMenuBar1 = new javax.swing.JMenuBar();
         mjugarchaturanga = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
-        jMenu8 = new javax.swing.JMenu();
+        mnuevapartida = new javax.swing.JMenu();
+        mcargarpartida = new javax.swing.JMenu();
+        meliminarpartida = new javax.swing.JMenu();
         mmicuenta = new javax.swing.JMenu();
-        jMenu7 = new javax.swing.JMenu();
-        jMenu9 = new javax.swing.JMenu();
-        jMenu10 = new javax.swing.JMenu();
+        mvermiinformacion = new javax.swing.JMenu();
+        mcambiarpassword = new javax.swing.JMenu();
+        mcerrarmicuenta = new javax.swing.JMenu();
         mreportes = new javax.swing.JMenu();
         jMenu11 = new javax.swing.JMenu();
         jMenu12 = new javax.swing.JMenu();
@@ -46,29 +46,29 @@ public class Menu_principal extends javax.swing.JFrame {
         mjugarchaturanga.setText("Jugar Chaturanga ");
         mjugarchaturanga.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
 
-        jMenu5.setText("Nueva Partida");
-        mjugarchaturanga.add(jMenu5);
+        mnuevapartida.setText("Nueva Partida");
+        mjugarchaturanga.add(mnuevapartida);
 
-        jMenu6.setText("Cargar Partida");
-        mjugarchaturanga.add(jMenu6);
+        mcargarpartida.setText("Cargar Partida");
+        mjugarchaturanga.add(mcargarpartida);
 
-        jMenu8.setText("Eliminar Partida");
-        mjugarchaturanga.add(jMenu8);
+        meliminarpartida.setText("Eliminar Partida");
+        mjugarchaturanga.add(meliminarpartida);
 
         jMenuBar1.add(mjugarchaturanga);
 
         mmicuenta.setText("Mi Cuenta");
         mmicuenta.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
 
-        jMenu7.setText("Ver Mi Información");
+        mvermiinformacion.setText("Ver Mi Información");
 
-        jMenu9.setText("Cambiar Password");
-        jMenu7.add(jMenu9);
+        mcambiarpassword.setText("Cambiar Password");
+        mvermiinformacion.add(mcambiarpassword);
 
-        jMenu10.setText("Cerrar mi Cuenta");
-        jMenu7.add(jMenu10);
+        mcerrarmicuenta.setText("Cerrar mi Cuenta");
+        mvermiinformacion.add(mcerrarmicuenta);
 
-        mmicuenta.add(jMenu7);
+        mmicuenta.add(mvermiinformacion);
 
         jMenuBar1.add(mmicuenta);
 
@@ -139,18 +139,18 @@ public class Menu_principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenu jMenu8;
-    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu mcambiarpassword;
+    private javax.swing.JMenu mcargarpartida;
+    private javax.swing.JMenu mcerrarmicuenta;
+    private javax.swing.JMenu meliminarpartida;
     private javax.swing.JMenu mjugarchaturanga;
     private javax.swing.JMenu mlogout;
     private javax.swing.JMenu mmicuenta;
+    private javax.swing.JMenu mnuevapartida;
     private javax.swing.JMenu mreportes;
+    private javax.swing.JMenu mvermiinformacion;
     // End of variables declaration//GEN-END:variables
 }
