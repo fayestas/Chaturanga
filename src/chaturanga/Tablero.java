@@ -14,7 +14,9 @@ public class Tablero {
     Ficha [][] tablero = new Ficha[8][8];
     
     public boolean setFichas(){
-        
+        setPeones();
+        setOtras();
+        return true;
     }
     
     public void setPeones(){

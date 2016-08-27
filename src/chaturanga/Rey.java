@@ -5,10 +5,16 @@
  */
 package chaturanga;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Frances
  */
 public class Rey extends Ficha {
+    
+    public Rey(){
+        super(new ImageIcon("URL"));
+    }
     
 }

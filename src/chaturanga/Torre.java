@@ -5,10 +5,16 @@
  */
 package chaturanga;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Frances
  */
 public class Torre extends Ficha {
+    
+    public Torre(){
+        super(new ImageIcon("URL"));
+    }
     
 }

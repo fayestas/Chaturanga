@@ -5,10 +5,16 @@
  */
 package chaturanga;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Frances
  */
 public class Caballo extends Ficha {
+    
+    public Caballo(){
+        super(new ImageIcon("URL"));
+    }
     
 }

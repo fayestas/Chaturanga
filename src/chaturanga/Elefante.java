@@ -5,10 +5,15 @@
  */
 package chaturanga;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Frances
  */
 public class Elefante extends Ficha {
     
+    public Elefante(){
+        super(new ImageIcon("URL"));
+    }
 }

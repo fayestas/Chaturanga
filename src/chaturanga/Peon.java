@@ -5,10 +5,15 @@
  */
 package chaturanga;
 
+import javax.swing.ImageIcon;
 /**
  *
  * @author Frances
  */
-public class Peon extends Ficha {
+public class Peon extends Ficha{
+    
+    public Peon(){
+        super(new ImageIcon("URL"));
+    }
     
 }
