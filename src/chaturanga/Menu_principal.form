@@ -7,7 +7,7 @@
         <Menu class="javax.swing.JMenu" name="mjugarchaturanga">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes40/BlackKnight.png"/>
+              <Image iconType="3" name="/imgmenuprincipal/wnw.gif"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Jugar Chaturanga "/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -22,11 +22,17 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="mcargarpartida">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imgmenuprincipal/loading.gif"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cargar Partida"/>
               </Properties>
             </Menu>
             <Menu class="javax.swing.JMenu" name="meliminarpartida">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imgmenuprincipal/trash-icon-52520.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Eliminar Partida"/>
               </Properties>
             </Menu>
@@ -34,6 +40,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="mmicuenta">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imgmenuprincipal/default.jpg"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Mi Cuenta"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Shonar Bangla" size="24" style="0"/>
@@ -42,11 +51,17 @@
           <SubComponents>
             <Menu class="javax.swing.JMenu" name="mvermiinformacion">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imgmenuprincipal/circle.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ver Mi Informaci&#xf3;n"/>
               </Properties>
               <SubComponents>
                 <Menu class="javax.swing.JMenu" name="mcambiarpassword">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imgmenuprincipal/Sign-up-32.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Cambiar Password"/>
                   </Properties>
                 </Menu>
@@ -61,6 +76,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="mreportes">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imgmenuprincipal/Document-icon.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Reportes"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Shonar Bangla" size="24" style="0"/>
@@ -69,6 +87,9 @@
           <SubComponents>
             <Menu class="javax.swing.JMenu" name="jMenu11">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imgmenuprincipal/icon-280316191442.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ranking Jugadores"/>
               </Properties>
             </Menu>
@@ -81,6 +102,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="mlogout">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imgmenuprincipal/logout-512.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="LOG OUT"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Shonar Bangla" size="24" style="0"/>

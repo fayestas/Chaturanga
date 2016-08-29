@@ -47,26 +47,31 @@ public class Menu_principal extends javax.swing.JFrame {
 
         jLabel1.setForeground(new java.awt.Color(204, 102, 0));
 
-        mjugarchaturanga.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes40/BlackKnight.png"))); // NOI18N
+        mjugarchaturanga.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/wnw.gif"))); // NOI18N
         mjugarchaturanga.setText("Jugar Chaturanga ");
         mjugarchaturanga.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
 
         mnuevapartida.setText("Nueva Partida");
         mjugarchaturanga.add(mnuevapartida);
 
+        mcargarpartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/loading.gif"))); // NOI18N
         mcargarpartida.setText("Cargar Partida");
         mjugarchaturanga.add(mcargarpartida);
 
+        meliminarpartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/trash-icon-52520.png"))); // NOI18N
         meliminarpartida.setText("Eliminar Partida");
         mjugarchaturanga.add(meliminarpartida);
 
         jMenuBar1.add(mjugarchaturanga);
 
+        mmicuenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/default.jpg"))); // NOI18N
         mmicuenta.setText("Mi Cuenta");
         mmicuenta.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
 
+        mvermiinformacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/circle.png"))); // NOI18N
         mvermiinformacion.setText("Ver Mi Información");
 
+        mcambiarpassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/Sign-up-32.png"))); // NOI18N
         mcambiarpassword.setText("Cambiar Password");
         mvermiinformacion.add(mcambiarpassword);
 
@@ -77,9 +82,11 @@ public class Menu_principal extends javax.swing.JFrame {
 
         jMenuBar1.add(mmicuenta);
 
+        mreportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/Document-icon.png"))); // NOI18N
         mreportes.setText("Reportes");
         mreportes.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
 
+        jMenu11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/icon-280316191442.png"))); // NOI18N
         jMenu11.setText("Ranking Jugadores");
         mreportes.add(jMenu11);
 
@@ -88,6 +95,7 @@ public class Menu_principal extends javax.swing.JFrame {
 
         jMenuBar1.add(mreportes);
 
+        mlogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/logout-512.png"))); // NOI18N
         mlogout.setText("LOG OUT");
         mlogout.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
         jMenuBar1.add(mlogout);
