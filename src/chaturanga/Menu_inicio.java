@@ -34,6 +34,7 @@ public class Menu_inicio extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jProgressBar1 = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 102, 0));
@@ -81,6 +82,8 @@ public class Menu_inicio extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chaturanga/Mi Fondo Dorado.gif"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 900, 560);
+        getContentPane().add(jProgressBar1);
+        jProgressBar1.setBounds(630, 240, 146, 14);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -132,5 +135,6 @@ public class Menu_inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JProgressBar jProgressBar1;
     // End of variables declaration//GEN-END:variables
 }
