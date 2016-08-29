@@ -27,6 +27,7 @@ public class Menu_principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mjugarchaturanga = new javax.swing.JMenu();
         mnuevapartida = new javax.swing.JMenu();
@@ -42,7 +43,11 @@ public class Menu_principal extends javax.swing.JFrame {
         mlogout = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 153, 0));
 
+        jLabel1.setForeground(new java.awt.Color(204, 102, 0));
+
+        mjugarchaturanga.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes40/BlackKnight.png"))); // NOI18N
         mjugarchaturanga.setText("Jugar Chaturanga ");
         mjugarchaturanga.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
 
@@ -93,11 +98,15 @@ public class Menu_principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 887, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 525, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -139,6 +148,7 @@ public class Menu_principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenuBar jMenuBar1;

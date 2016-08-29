@@ -22,7 +22,7 @@ public class Tablero {
     public void setPeones(){
         int fila = 1;
         for(int c=0; c<8; c++){
-            tablero[fila][c] = new Peon();
+            tablero[fila][c] = new Peon(fila);
             if(c==7 && fila==1){
                 c=0;
                 fila=6;
