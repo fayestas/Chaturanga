@@ -62,11 +62,11 @@ public class Menu_inicio extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(360, 420, 350, 84);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chaturanga/titulo.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/titulo.png"))); // NOI18N
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(60, 0, 600, 90);
+        jLabel3.setBounds(130, 0, 600, 90);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chaturanga/imagchatu.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagchatu.png"))); // NOI18N
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(-190, 230, 540, 200);
@@ -80,7 +80,7 @@ public class Menu_inicio extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(204, 102, 0));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chaturanga/Mi Fondo Dorado.gif"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 740, 550);
+        jLabel2.setBounds(0, 0, 900, 560);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
