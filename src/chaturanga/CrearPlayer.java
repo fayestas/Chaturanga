@@ -27,21 +27,90 @@ public class CrearPlayer extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtcplayernombre = new javax.swing.JTextField();
+        btncplayerguardar = new javax.swing.JButton();
+        btncplayercancelar = new javax.swing.JButton();
+        txtcplayercontraseña = new javax.swing.JPasswordField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
+        jLabel1.setText("Nombre");
+
+        jLabel2.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
+        jLabel2.setText("Contraseña");
+
+        txtcplayernombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcplayernombreActionPerformed(evt);
+            }
+        });
+
+        btncplayerguardar.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
+        btncplayerguardar.setText("Guardar");
+        btncplayerguardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncplayerguardarActionPerformed(evt);
+            }
+        });
+
+        btncplayercancelar.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
+        btncplayercancelar.setText("Cancelar");
+
+        txtcplayercontraseña.setText("jPasswordField1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtcplayernombre)
+                            .addComponent(txtcplayercontraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(btncplayerguardar)
+                        .addGap(91, 91, 91)
+                        .addComponent(btncplayercancelar)))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtcplayernombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtcplayercontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btncplayerguardar)
+                    .addComponent(btncplayercancelar))
+                .addGap(48, 48, 48))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btncplayerguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncplayerguardarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btncplayerguardarActionPerformed
+
+    private void txtcplayernombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcplayernombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcplayernombreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +148,11 @@ public class CrearPlayer extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btncplayercancelar;
+    private javax.swing.JButton btncplayerguardar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPasswordField txtcplayercontraseña;
+    private javax.swing.JTextField txtcplayernombre;
     // End of variables declaration//GEN-END:variables
 }
