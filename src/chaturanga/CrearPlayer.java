@@ -14,6 +14,7 @@ public class CrearPlayer extends javax.swing.JFrame {
     /**
      * Creates new form CrearPlayer
      */
+    Usuarios users= new Usuarios();
     public CrearPlayer() {
         initComponents();
     }
@@ -33,73 +34,77 @@ public class CrearPlayer extends javax.swing.JFrame {
         btncplayerguardar = new javax.swing.JButton();
         btncplayercancelar = new javax.swing.JButton();
         txtcplayercontraseña = new javax.swing.JPasswordField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(900, 800));
+        setMinimumSize(new java.awt.Dimension(900, 800));
+        setPreferredSize(new java.awt.Dimension(900, 800));
+        getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
         jLabel1.setText("Usuario");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(160, 230, 93, 22);
 
-        jLabel2.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
         jLabel2.setText("Contraseña");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(160, 300, 110, 22);
 
         txtcplayernombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtcplayernombreActionPerformed(evt);
             }
         });
+        getContentPane().add(txtcplayernombre);
+        txtcplayernombre.setBounds(300, 220, 181, 30);
 
-        btncplayerguardar.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
-        btncplayerguardar.setText("Guardar");
+        btncplayerguardar.setBackground(new java.awt.Color(0, 0, 0));
+        btncplayerguardar.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
+        btncplayerguardar.setForeground(new java.awt.Color(255, 255, 255));
+        btncplayerguardar.setText("CREAR");
+        btncplayerguardar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btncplayerguardarMouseClicked(evt);
+            }
+        });
         btncplayerguardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btncplayerguardarActionPerformed(evt);
             }
         });
+        getContentPane().add(btncplayerguardar);
+        btncplayerguardar.setBounds(250, 440, 160, 33);
 
-        btncplayercancelar.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
-        btncplayercancelar.setText("Cancelar");
+        btncplayercancelar.setBackground(new java.awt.Color(0, 0, 0));
+        btncplayercancelar.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
+        btncplayercancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btncplayercancelar.setText("CANCELAR");
+        btncplayercancelar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btncplayercancelarMouseClicked(evt);
+            }
+        });
+        btncplayercancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncplayercancelarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btncplayercancelar);
+        btncplayercancelar.setBounds(470, 440, 150, 33);
+        getContentPane().add(txtcplayercontraseña);
+        txtcplayercontraseña.setBounds(300, 290, 181, 30);
 
-        txtcplayercontraseña.setText("jPasswordField1");
+        jLabel3.setFont(new java.awt.Font("Cooper Black", 3, 24)); // NOI18N
+        jLabel3.setText("CREAR NUEVO USUARIO");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(290, 100, 360, 50);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(39, 39, 39)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtcplayernombre)
-                            .addComponent(txtcplayercontraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(btncplayerguardar)
-                        .addGap(91, 91, 91)
-                        .addComponent(btncplayercancelar)))
-                .addContainerGap(331, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtcplayernombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtcplayercontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 213, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btncplayerguardar)
-                    .addComponent(btncplayercancelar))
-                .addGap(48, 48, 48))
-        );
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo3.jpg"))); // NOI18N
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(-7, -1, 900, 800);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -111,6 +116,39 @@ public class CrearPlayer extends javax.swing.JFrame {
     private void txtcplayernombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcplayernombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtcplayernombreActionPerformed
+
+    private void btncplayercancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncplayercancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btncplayercancelarActionPerformed
+
+    private void btncplayerguardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncplayerguardarMouseClicked
+        // TODO add your handling code here:
+        String nombre=txtcplayernombre.getText();
+        char[] contra=txtcplayercontraseña.getPassword();
+        
+        if(nombre.equalsIgnoreCase(""))
+            System.out.println("Debe Ingresar un Nombre de Usuario");
+        else{
+        if(users.buscar(txtcplayernombre.getText())==null){
+            if(contra.length==5){
+                users.players.add(new Usuario(nombre,contra));
+            }
+            else{
+                System.out.println("la contraseña debe ser de 5 caracteres");
+            }
+        }
+        else
+            System.out.println("el nombre ingresado ya existe");
+        }
+    }//GEN-LAST:event_btncplayerguardarMouseClicked
+
+    private void btncplayercancelarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncplayercancelarMouseClicked
+        // TODO add your handling code here:
+        
+        txtcplayernombre.setText("");
+        txtcplayercontraseña.setText("");
+        
+    }//GEN-LAST:event_btncplayercancelarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -145,6 +183,8 @@ public class CrearPlayer extends javax.swing.JFrame {
                 new CrearPlayer().setVisible(true);
             }
         });
+        
+        //txtcplayercontraseña
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -152,6 +192,8 @@ public class CrearPlayer extends javax.swing.JFrame {
     private javax.swing.JButton btncplayerguardar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField txtcplayercontraseña;
     private javax.swing.JTextField txtcplayernombre;
     // End of variables declaration//GEN-END:variables

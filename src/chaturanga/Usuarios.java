@@ -14,4 +14,12 @@ import java.util.ArrayList;
 public class Usuarios {
     ArrayList<Usuario> players = new ArrayList<>();
     
+    public Usuario buscar(String nombre){
+        for(Usuario e: players){
+            if(e.getNombre().equals(nombre)){
+                return e;
+            }
+        }
+        return null;
+    }
 }

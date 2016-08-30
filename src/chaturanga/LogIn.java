@@ -17,6 +17,7 @@ public class LogIn extends javax.swing.JFrame {
     public LogIn() {
         initComponents();
     }
+    Usuarios users = new Usuarios();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -62,6 +63,7 @@ public class LogIn extends javax.swing.JFrame {
         txtloginnombre.setBounds(320, 300, 180, 40);
 
         txtlogincontraseña.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtlogincontraseña.setName(""); // NOI18N
         getContentPane().add(txtlogincontraseña);
         txtlogincontraseña.setBounds(320, 380, 180, 40);
 
@@ -69,6 +71,11 @@ public class LogIn extends javax.swing.JFrame {
         btnloginguardar.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         btnloginguardar.setForeground(new java.awt.Color(255, 255, 255));
         btnloginguardar.setText("ACEPTAR");
+        btnloginguardar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnloginguardarMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnloginguardar);
         btnloginguardar.setBounds(190, 530, 210, 60);
 
@@ -94,6 +101,26 @@ public class LogIn extends javax.swing.JFrame {
     private void txtloginnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtloginnombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtloginnombreActionPerformed
+
+    private void btnloginguardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnloginguardarMouseClicked
+        // TODO add your handling code here:
+        Usuario u = users.buscar(txtloginnombre.getText());
+        
+        if(u!=null){
+            if(u.getNombre().equals(String.valueOf(txtlogincontraseña.getPassword()))){
+                Menu_principal obj = new Menu_principal();
+                obj.setVisible(true);
+                dispose();
+            }
+            else{
+                System.out.println("Contraseña Incorrecta");
+                }
+            }
+            else{
+  
+             System.out.println("Usuario no Existe");
+            }
+    }//GEN-LAST:event_btnloginguardarMouseClicked
 
     /**
      * @param args the command line arguments
