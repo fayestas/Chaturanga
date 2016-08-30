@@ -48,10 +48,11 @@ public class Menu_principal extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(204, 102, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagmesa2.jpg"))); // NOI18N
 
-        mjugarchaturanga.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/wnw.gif"))); // NOI18N
+        mjugarchaturanga.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/animated-gifs-elephants-029.gif"))); // NOI18N
         mjugarchaturanga.setText("Jugar Chaturanga ");
         mjugarchaturanga.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
 
+        mnuevapartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/-pawns.gif"))); // NOI18N
         mnuevapartida.setText("Nueva Partida");
         mjugarchaturanga.add(mnuevapartida);
 
@@ -69,13 +70,14 @@ public class Menu_principal extends javax.swing.JFrame {
         mmicuenta.setText("Mi Cuenta");
         mmicuenta.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
 
-        mvermiinformacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/circle.png"))); // NOI18N
+        mvermiinformacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/edit_profile.png"))); // NOI18N
         mvermiinformacion.setText("Ver Mi Información");
 
         mcambiarpassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/Sign-up-32.png"))); // NOI18N
         mcambiarpassword.setText("Cambiar Password");
         mvermiinformacion.add(mcambiarpassword);
 
+        mcerrarmicuenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/popup_close_button.png"))); // NOI18N
         mcerrarmicuenta.setText("Cerrar mi Cuenta");
         mvermiinformacion.add(mcerrarmicuenta);
 
@@ -91,6 +93,7 @@ public class Menu_principal extends javax.swing.JFrame {
         jMenu11.setText("Ranking Jugadores");
         mreportes.add(jMenu11);
 
+        jMenu12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/daily-logs-32.png"))); // NOI18N
         jMenu12.setText("Logs de mis últimos juegos");
         mreportes.add(jMenu12);
 

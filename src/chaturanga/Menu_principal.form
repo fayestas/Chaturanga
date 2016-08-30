@@ -7,7 +7,7 @@
         <Menu class="javax.swing.JMenu" name="mjugarchaturanga">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imgmenuprincipal/wnw.gif"/>
+              <Image iconType="3" name="/imgmenuprincipal/animated-gifs-elephants-029.gif"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Jugar Chaturanga "/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -17,6 +17,9 @@
           <SubComponents>
             <Menu class="javax.swing.JMenu" name="mnuevapartida">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imgmenuprincipal/-pawns.gif"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Nueva Partida"/>
               </Properties>
             </Menu>
@@ -52,7 +55,7 @@
             <Menu class="javax.swing.JMenu" name="mvermiinformacion">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imgmenuprincipal/circle.png"/>
+                  <Image iconType="3" name="/imgmenuprincipal/edit_profile.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ver Mi Informaci&#xf3;n"/>
               </Properties>
@@ -67,6 +70,9 @@
                 </Menu>
                 <Menu class="javax.swing.JMenu" name="mcerrarmicuenta">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imgmenuprincipal/popup_close_button.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Cerrar mi Cuenta"/>
                   </Properties>
                 </Menu>
@@ -95,6 +101,9 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu12">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imgmenuprincipal/daily-logs-32.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Logs de mis &#xfa;ltimos juegos"/>
               </Properties>
             </Menu>
