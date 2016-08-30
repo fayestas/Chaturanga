@@ -33,8 +33,7 @@ public class Menu_inicio extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jProgressBar1 = new javax.swing.JProgressBar();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 102, 0));
@@ -49,19 +48,19 @@ public class Menu_inicio extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(360, 230, 350, 84);
+        jButton1.setBounds(280, 210, 350, 84);
 
         jButton2.setBackground(new java.awt.Color(102, 0, 0));
         jButton2.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         jButton2.setText("Crear Player");
         getContentPane().add(jButton2);
-        jButton2.setBounds(360, 320, 350, 84);
+        jButton2.setBounds(280, 330, 350, 84);
 
         jButton3.setBackground(new java.awt.Color(102, 0, 0));
         jButton3.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         jButton3.setText("Salir");
         getContentPane().add(jButton3);
-        jButton3.setBounds(360, 420, 350, 84);
+        jButton3.setBounds(280, 450, 350, 84);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/titulo.png"))); // NOI18N
         getContentPane().add(jLabel3);
@@ -70,20 +69,18 @@ public class Menu_inicio extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagchatu.png"))); // NOI18N
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(-190, 230, 540, 200);
+        jLabel4.setBounds(-220, 220, 520, 200);
 
         jLabel1.setFont(new java.awt.Font("Cooper Black", 3, 40)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 0));
         jLabel1.setText(" MENU INICIO");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(360, 140, 350, 47);
+        jLabel1.setBounds(280, 130, 350, 47);
 
-        jLabel2.setForeground(new java.awt.Color(204, 102, 0));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chaturanga/Mi Fondo Dorado.gif"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 900, 560);
-        getContentPane().add(jProgressBar1);
-        jProgressBar1.setBounds(630, 240, 146, 14);
+        jLabel5.setForeground(new java.awt.Color(204, 102, 0));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chaturanga/MiFondoDorado.gif"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 900, 800);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -132,9 +129,8 @@ public class Menu_inicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
