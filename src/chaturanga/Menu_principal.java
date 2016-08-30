@@ -54,6 +54,11 @@ public class Menu_principal extends javax.swing.JFrame {
 
         mnuevapartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/-pawns.gif"))); // NOI18N
         mnuevapartida.setText("Nueva Partida");
+        mnuevapartida.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                mnuevapartidaMousePressed(evt);
+            }
+        });
         mjugarchaturanga.add(mnuevapartida);
 
         mcargarpartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/loading.gif"))); // NOI18N
@@ -91,10 +96,20 @@ public class Menu_principal extends javax.swing.JFrame {
 
         jMenu11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/icon-280316191442.png"))); // NOI18N
         jMenu11.setText("Ranking Jugadores");
+        jMenu11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jMenu11MousePressed(evt);
+            }
+        });
         mreportes.add(jMenu11);
 
         jMenu12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/daily-logs-32.png"))); // NOI18N
         jMenu12.setText("Logs de mis últimos juegos");
+        jMenu12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jMenu12MousePressed(evt);
+            }
+        });
         mreportes.add(jMenu12);
 
         jMenuBar1.add(mreportes);
@@ -102,6 +117,11 @@ public class Menu_principal extends javax.swing.JFrame {
         mlogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/logout-512.png"))); // NOI18N
         mlogout.setText("LOG OUT");
         mlogout.setFont(new java.awt.Font("Shonar Bangla", 0, 24)); // NOI18N
+        mlogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                mlogoutMousePressed(evt);
+            }
+        });
         jMenuBar1.add(mlogout);
 
         setJMenuBar(jMenuBar1);
@@ -121,6 +141,26 @@ public class Menu_principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenu11MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu11MousePressed
+        RankingJugadores obj = new RankingJugadores();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jMenu11MousePressed
+
+    private void jMenu12MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu12MousePressed
+        LogsDeMisUltimosJuegos obj = new LogsDeMisUltimosJuegos();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jMenu12MousePressed
+
+    private void mlogoutMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mlogoutMousePressed
+        dispose();
+    }//GEN-LAST:event_mlogoutMousePressed
+
+    private void mnuevapartidaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnuevapartidaMousePressed
+        
+    }//GEN-LAST:event_mnuevapartidaMousePressed
 
     /**
      * @param args the command line arguments
