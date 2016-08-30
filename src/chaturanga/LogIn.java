@@ -33,69 +33,67 @@ public class LogIn extends javax.swing.JFrame {
         txtlogincontraseña = new javax.swing.JPasswordField();
         btnloginguardar = new javax.swing.JButton();
         btnlogincancelar = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(102, 0, 0));
+        setMaximumSize(new java.awt.Dimension(900, 900));
+        setMinimumSize(new java.awt.Dimension(900, 800));
+        getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
-        jLabel1.setText("Nombre");
+        jLabel1.setFont(new java.awt.Font("Cooper Black", 2, 24)); // NOI18N
+        jLabel1.setText("Usuario");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(140, 310, 110, 28);
 
-        jLabel2.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         jLabel2.setText("Contraseña");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(140, 390, 139, 28);
 
-        txtloginnombre.setText("jTextField1");
+        txtloginnombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtloginnombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtloginnombreActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtloginnombre);
+        txtloginnombre.setBounds(320, 300, 180, 40);
 
-        txtlogincontraseña.setText("jPasswordField1");
+        txtlogincontraseña.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        getContentPane().add(txtlogincontraseña);
+        txtlogincontraseña.setBounds(320, 380, 180, 40);
 
-        btnloginguardar.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
-        btnloginguardar.setText("Guardar");
+        btnloginguardar.setBackground(new java.awt.Color(0, 0, 0));
+        btnloginguardar.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
+        btnloginguardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnloginguardar.setText("ACEPTAR");
+        getContentPane().add(btnloginguardar);
+        btnloginguardar.setBounds(190, 530, 210, 60);
 
-        btnlogincancelar.setFont(new java.awt.Font("Shonar Bangla", 0, 18)); // NOI18N
-        btnlogincancelar.setText("Cancelar");
+        btnlogincancelar.setBackground(new java.awt.Color(0, 0, 0));
+        btnlogincancelar.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
+        btnlogincancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btnlogincancelar.setText("CANCELAR");
+        getContentPane().add(btnlogincancelar);
+        btnlogincancelar.setBounds(590, 530, 180, 60);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(40, 40, 40)
-                                .addComponent(txtlogincontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(53, 53, 53)
-                                .addComponent(txtloginnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnloginguardar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
-                        .addComponent(btnlogincancelar)
-                        .addGap(80, 80, 80))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtloginnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(txtlogincontraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnloginguardar)
-                    .addComponent(btnlogincancelar))
-                .addGap(72, 72, 72))
-        );
+        jLabel3.setFont(new java.awt.Font("Cooper Black", 3, 48)); // NOI18N
+        jLabel3.setText("LOGIN");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(350, 110, 210, 57);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo3.jpg"))); // NOI18N
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(-7, -1, 900, 800);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtloginnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtloginnombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtloginnombreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,6 +135,8 @@ public class LogIn extends javax.swing.JFrame {
     private javax.swing.JButton btnloginguardar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField txtlogincontraseña;
     private javax.swing.JTextField txtloginnombre;
     // End of variables declaration//GEN-END:variables
