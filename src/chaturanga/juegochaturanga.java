@@ -5,15 +5,20 @@
  */
 package chaturanga;
 
+import java.awt.Component;
+import javax.swing.JLabel;
+
 /**
  *
  * @author Mae Lindell
  */
+   
 public class juegochaturanga extends javax.swing.JFrame {
 
     /**
      * Creates new form juegochaturanga
      */
+    Tablero tab = new Tablero();
     public juegochaturanga() {
         initComponents();
     }
@@ -95,6 +100,11 @@ public class juegochaturanga extends javax.swing.JFrame {
         jLabel66 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         jPanel1.setOpaque(false);
@@ -303,6 +313,21 @@ public class juegochaturanga extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        tab.setFichas();
+        int f = 0, c = 0;
+        for( Component e:jPanel1.getComponents())
+            ((JLabel)e).setIcon(Tablero.tablero[f][c].getImg());
+        if(c==7){
+            c=0;
+            f++;
+        }
+        else{
+            c++;
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments

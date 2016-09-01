@@ -11,11 +11,12 @@ package chaturanga;
  */
 public class Tablero {
     
-    Ficha [][] tablero = new Ficha[8][8];
+   public static Ficha [][] tablero = new Ficha[8][8];
     
     public boolean setFichas(){
         setPeones();
         setOtras();
+        setVacias();
         return true;
     }
     
@@ -51,12 +52,13 @@ public class Tablero {
             tablero[f][7] = new Torre();
             f=7;
         }while(f!=7);
+        
     }
     
     public void setVacias(){
         for(int f=2;f<6;f++){
             for(int c=0; c<8; c++){
-                tablero[f][c]=new Ficha(null);
+                tablero[f][c]=new Ficha();
             }
         }
     
