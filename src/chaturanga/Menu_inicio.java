@@ -37,30 +37,48 @@ public class Menu_inicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 102, 0));
+        setMaximumSize(new java.awt.Dimension(900, 800));
+        setMinimumSize(new java.awt.Dimension(900, 800));
+        setPreferredSize(new java.awt.Dimension(900, 800));
         getContentPane().setLayout(null);
 
         jButton1.setBackground(new java.awt.Color(102, 0, 0));
         jButton1.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         jButton1.setText("Log In");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(280, 210, 350, 84);
+        jButton1.setBounds(280, 280, 350, 84);
 
         jButton2.setBackground(new java.awt.Color(102, 0, 0));
         jButton2.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         jButton2.setText("Crear Player");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
         getContentPane().add(jButton2);
-        jButton2.setBounds(280, 330, 350, 84);
+        jButton2.setBounds(280, 400, 350, 84);
 
         jButton3.setBackground(new java.awt.Color(102, 0, 0));
         jButton3.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         jButton3.setText("Salir");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
         getContentPane().add(jButton3);
-        jButton3.setBounds(280, 450, 350, 84);
+        jButton3.setBounds(280, 520, 350, 84);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/titulo.png"))); // NOI18N
         getContentPane().add(jLabel3);
@@ -69,18 +87,18 @@ public class Menu_inicio extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagchatu.png"))); // NOI18N
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(-220, 220, 520, 200);
+        jLabel4.setBounds(-230, 400, 520, 200);
 
         jLabel1.setFont(new java.awt.Font("Cooper Black", 3, 40)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 0));
         jLabel1.setText(" MENU INICIO");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(280, 130, 350, 47);
+        jLabel1.setBounds(280, 170, 350, 47);
 
         jLabel5.setForeground(new java.awt.Color(204, 102, 0));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chaturanga/MiFondoDorado.gif"))); // NOI18N
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 0, 900, 800);
+        jLabel5.setBounds(0, 0, 910, 800);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -88,6 +106,22 @@ public class Menu_inicio extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        LogIn obj = new LogIn();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+         CrearPlayer obj = new CrearPlayer();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        dispose();
+    }//GEN-LAST:event_jButton3MouseClicked
 
     /**
      * @param args the command line arguments

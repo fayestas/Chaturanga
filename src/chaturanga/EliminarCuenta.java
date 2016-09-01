@@ -7,14 +7,14 @@ package chaturanga;
 
 /**
  *
- * @author Frances
+ * @author Mae Lindell
  */
-public class LogsDeMisUltimosJuegos extends javax.swing.JFrame {
+public class EliminarCuenta extends javax.swing.JFrame {
 
     /**
-     * Creates new form LogsDeMisUltimosJuegos
+     * Creates new form EliminarCuenta
      */
-    public LogsDeMisUltimosJuegos() {
+    public EliminarCuenta() {
         initComponents();
     }
 
@@ -28,8 +28,10 @@ public class LogsDeMisUltimosJuegos extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -38,52 +40,48 @@ public class LogsDeMisUltimosJuegos extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(900, 800));
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Cooper Black", 0, 36)); // NOI18N
-        jLabel1.setText("LOG DE MIS ULTIMOS PARTIDOS");
+        jLabel1.setFont(new java.awt.Font("Cooper Black", 3, 36)); // NOI18N
+        jLabel1.setText("Eliminar Cuenta");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(110, 60, 630, 40);
+        jLabel1.setBounds(230, 100, 340, 40);
+
+        jLabel2.setFont(new java.awt.Font("Cooper Black", 2, 24)); // NOI18N
+        jLabel2.setText("Confirmar Contraseña:");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(60, 320, 300, 14);
+
+        jLabel3.setFont(new java.awt.Font("Cooper Black", 2, 24)); // NOI18N
+        jLabel3.setText("Usuario");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(70, 270, 130, 28);
+
+        jPasswordField1.setText("jPasswordField1");
+        getContentPane().add(jPasswordField1);
+        jPasswordField1.setBounds(410, 310, 220, 30);
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Cooper Black", 3, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/exportar1.png"))); // NOI18N
-        jButton1.setText("Exportar");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(420, 610, 200, 40);
-
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setFont(new java.awt.Font("Cooper Black", 3, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Salir");
-        jButton2.setMaximumSize(new java.awt.Dimension(900, 800));
-        jButton2.setMinimumSize(new java.awt.Dimension(900, 800));
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton2MousePressed(evt);
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/eliminar1.png"))); // NOI18N
+        jButton1.setText("Eliminar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(640, 610, 200, 40);
+        getContentPane().add(jButton1);
+        jButton1.setBounds(570, 590, 190, 40);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo4.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo3.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 900, 800);
+        jLabel4.setBounds(-10, 0, 900, 800);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-
-    }//GEN-LAST:event_jButton2MouseClicked
-
-    private void jButton2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MousePressed
-        Menu_principal obj = new Menu_principal();
-        obj.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jButton2MousePressed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -102,28 +100,30 @@ public class LogsDeMisUltimosJuegos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LogsDeMisUltimosJuegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EliminarCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LogsDeMisUltimosJuegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EliminarCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LogsDeMisUltimosJuegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EliminarCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LogsDeMisUltimosJuegos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EliminarCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LogsDeMisUltimosJuegos().setVisible(true);
+                new EliminarCuenta().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPasswordField jPasswordField1;
     // End of variables declaration//GEN-END:variables
 }

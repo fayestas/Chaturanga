@@ -46,12 +46,12 @@ public class LogIn extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Cooper Black", 2, 24)); // NOI18N
         jLabel1.setText("Usuario");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(140, 310, 110, 28);
+        jLabel1.setBounds(140, 290, 110, 28);
 
         jLabel2.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         jLabel2.setText("Contraseña");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(140, 390, 139, 28);
+        jLabel2.setBounds(140, 370, 139, 28);
 
         txtloginnombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtloginnombre.addActionListener(new java.awt.event.ActionListener() {
@@ -60,16 +60,17 @@ public class LogIn extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtloginnombre);
-        txtloginnombre.setBounds(320, 300, 180, 40);
+        txtloginnombre.setBounds(320, 280, 180, 40);
 
         txtlogincontraseña.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txtlogincontraseña.setName(""); // NOI18N
         getContentPane().add(txtlogincontraseña);
-        txtlogincontraseña.setBounds(320, 380, 180, 40);
+        txtlogincontraseña.setBounds(320, 360, 180, 40);
 
         btnloginguardar.setBackground(new java.awt.Color(0, 0, 0));
         btnloginguardar.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         btnloginguardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnloginguardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iniciar1.png"))); // NOI18N
         btnloginguardar.setText("ACEPTAR");
         btnloginguardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -77,19 +78,30 @@ public class LogIn extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnloginguardar);
-        btnloginguardar.setBounds(190, 530, 210, 60);
+        btnloginguardar.setBounds(190, 560, 230, 50);
 
         btnlogincancelar.setBackground(new java.awt.Color(0, 0, 0));
         btnlogincancelar.setFont(new java.awt.Font("Cooper Black", 0, 24)); // NOI18N
         btnlogincancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btnlogincancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cancel.png"))); // NOI18N
         btnlogincancelar.setText("CANCELAR");
+        btnlogincancelar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnlogincancelarMouseClicked(evt);
+            }
+        });
+        btnlogincancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnlogincancelarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnlogincancelar);
-        btnlogincancelar.setBounds(590, 530, 180, 60);
+        btnlogincancelar.setBounds(550, 560, 213, 50);
 
         jLabel3.setFont(new java.awt.Font("Cooper Black", 3, 48)); // NOI18N
         jLabel3.setText("LOGIN");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(350, 110, 210, 57);
+        jLabel3.setBounds(360, 80, 210, 57);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo3.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
@@ -121,6 +133,16 @@ public class LogIn extends javax.swing.JFrame {
              System.out.println("Usuario no Existe");
             }
     }//GEN-LAST:event_btnloginguardarMouseClicked
+
+    private void btnlogincancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlogincancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnlogincancelarActionPerformed
+
+    private void btnlogincancelarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnlogincancelarMouseClicked
+        Menu_inicio obj = new Menu_inicio();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnlogincancelarMouseClicked
 
     /**
      * @param args the command line arguments

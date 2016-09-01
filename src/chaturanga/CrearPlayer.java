@@ -43,15 +43,15 @@ public class CrearPlayer extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(900, 800));
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
-        jLabel1.setText("Usuario");
+        jLabel1.setFont(new java.awt.Font("Cooper Black", 0, 22)); // NOI18N
+        jLabel1.setText("Usuario:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(160, 230, 93, 22);
+        jLabel1.setBounds(160, 230, 130, 26);
 
-        jLabel2.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
-        jLabel2.setText("Contraseña");
+        jLabel2.setFont(new java.awt.Font("Cooper Black", 0, 22)); // NOI18N
+        jLabel2.setText("Contraseña:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(160, 300, 110, 22);
+        jLabel2.setBounds(160, 300, 140, 26);
 
         txtcplayernombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,11 +59,12 @@ public class CrearPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtcplayernombre);
-        txtcplayernombre.setBounds(300, 220, 181, 30);
+        txtcplayernombre.setBounds(350, 230, 260, 30);
 
         btncplayerguardar.setBackground(new java.awt.Color(0, 0, 0));
         btncplayerguardar.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
         btncplayerguardar.setForeground(new java.awt.Color(255, 255, 255));
+        btncplayerguardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/edit_profile.png"))); // NOI18N
         btncplayerguardar.setText("CREAR");
         btncplayerguardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -76,11 +77,12 @@ public class CrearPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btncplayerguardar);
-        btncplayerguardar.setBounds(250, 440, 160, 33);
+        btncplayerguardar.setBounds(160, 550, 230, 50);
 
         btncplayercancelar.setBackground(new java.awt.Color(0, 0, 0));
         btncplayercancelar.setFont(new java.awt.Font("Cooper Black", 0, 18)); // NOI18N
         btncplayercancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btncplayercancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cancel.png"))); // NOI18N
         btncplayercancelar.setText("CANCELAR");
         btncplayercancelar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -93,14 +95,20 @@ public class CrearPlayer extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btncplayercancelar);
-        btncplayercancelar.setBounds(470, 440, 150, 33);
-        getContentPane().add(txtcplayercontraseña);
-        txtcplayercontraseña.setBounds(300, 290, 181, 30);
+        btncplayercancelar.setBounds(440, 550, 230, 50);
 
-        jLabel3.setFont(new java.awt.Font("Cooper Black", 3, 24)); // NOI18N
+        txtcplayercontraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcplayercontraseñaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtcplayercontraseña);
+        txtcplayercontraseña.setBounds(350, 300, 260, 30);
+
+        jLabel3.setFont(new java.awt.Font("Cooper Black", 3, 36)); // NOI18N
         jLabel3.setText("CREAR NUEVO USUARIO");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(290, 100, 360, 50);
+        jLabel3.setBounds(180, 100, 530, 50);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo3.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
@@ -144,11 +152,18 @@ public class CrearPlayer extends javax.swing.JFrame {
 
     private void btncplayercancelarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncplayercancelarMouseClicked
         // TODO add your handling code here:
+        Menu_inicio obj = new Menu_inicio();
+        obj.setVisible(true);
+        dispose();
         
         txtcplayernombre.setText("");
         txtcplayercontraseña.setText("");
         
     }//GEN-LAST:event_btncplayercancelarMouseClicked
+
+    private void txtcplayercontraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcplayercontraseñaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcplayercontraseñaActionPerformed
 
     /**
      * @param args the command line arguments
