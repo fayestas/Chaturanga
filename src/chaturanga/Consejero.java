@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
  */
 public class Consejero extends Ficha {
     
-    public Consejero(){
-        super(new ImageIcon("URL"));
+    public Consejero(int fila){
+        super(new ImageIcon((fila==0?"imagenes/BlackConsejero.png":"imagenes/WhiteConsejero.png")));
     }
 }
