@@ -33,10 +33,10 @@ public class Tablero {
     
     public void setOtras(){
         setAddOtras();
-        tablero[7][3]= new Consejero();
-        tablero[0][4]= new Consejero();
-        tablero[0][3]= new Rey();
-        tablero[7][4]= new Rey();
+        tablero[7][3]= new Consejero(7);
+        tablero[0][4]= new Consejero(0);
+        tablero[0][3]= new Rey(0);
+        tablero[7][4]= new Rey(7);
                 
     }
     
@@ -44,12 +44,12 @@ public class Tablero {
         int f=0;
         
         do{
-            tablero[f][0] = new Torre();
-            tablero[f][1] = new Caballo();
-            tablero[f][2] = new Elefante();
-            tablero[f][5] = new Elefante();
-            tablero[f][6] = new Caballo();
-            tablero[f][7] = new Torre();
+            tablero[f][0] = new Torre(f);
+            tablero[f][1] = new Caballo(f);
+            tablero[f][2] = new Elefante(f);
+            tablero[f][5] = new Elefante(f);
+            tablero[f][6] = new Caballo(f);
+            tablero[f][7] = new Torre(f);
             f=7;
         }while(f!=7);
         
