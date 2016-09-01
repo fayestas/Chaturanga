@@ -34,6 +34,7 @@ public class Menu_inicio extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 102, 0));
@@ -96,9 +97,16 @@ public class Menu_inicio extends javax.swing.JFrame {
         jLabel1.setBounds(280, 170, 350, 47);
 
         jLabel5.setForeground(new java.awt.Color(204, 102, 0));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/chaturanga/MiFondoDorado.gif"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/MiFondoDorado.gif"))); // NOI18N
         getContentPane().add(jLabel5);
         jLabel5.setBounds(0, 0, 910, 800);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/MiFondoDorado.gif"))); // NOI18N
+        jLabel2.setMaximumSize(new java.awt.Dimension(900, 800));
+        jLabel2.setMinimumSize(new java.awt.Dimension(900, 800));
+        jLabel2.setPreferredSize(new java.awt.Dimension(900, 800));
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(-10, -10, 970, 800);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -163,6 +171,7 @@ public class Menu_inicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

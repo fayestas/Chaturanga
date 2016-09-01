@@ -149,6 +149,8 @@ public class Menu_principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenu12MousePressed
 
     private void mlogoutMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mlogoutMousePressed
+        Menu_inicio obj = new Menu_inicio();
+        obj.setVisible(true);
         dispose();
     }//GEN-LAST:event_mlogoutMousePressed
 
