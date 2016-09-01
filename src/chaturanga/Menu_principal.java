@@ -35,8 +35,6 @@ public class Menu_principal extends javax.swing.JFrame {
         meliminarpartida = new javax.swing.JMenu();
         mmicuenta = new javax.swing.JMenu();
         mvermiinformacion = new javax.swing.JMenu();
-        mcambiarpassword = new javax.swing.JMenu();
-        mcerrarmicuenta = new javax.swing.JMenu();
         mreportes = new javax.swing.JMenu();
         jMenu11 = new javax.swing.JMenu();
         jMenu12 = new javax.swing.JMenu();
@@ -72,15 +70,11 @@ public class Menu_principal extends javax.swing.JFrame {
 
         mvermiinformacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/edit_profile.png"))); // NOI18N
         mvermiinformacion.setText("Ver Mi Información");
-
-        mcambiarpassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/Sign-up-32.png"))); // NOI18N
-        mcambiarpassword.setText("Cambiar Password");
-        mvermiinformacion.add(mcambiarpassword);
-
-        mcerrarmicuenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/popup_close_button.png"))); // NOI18N
-        mcerrarmicuenta.setText("Cerrar mi Cuenta");
-        mvermiinformacion.add(mcerrarmicuenta);
-
+        mvermiinformacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                mvermiinformacionMousePressed(evt);
+            }
+        });
         mmicuenta.add(mvermiinformacion);
 
         jMenuBar1.add(mmicuenta);
@@ -153,6 +147,12 @@ public class Menu_principal extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_mlogoutMousePressed
 
+    private void mvermiinformacionMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mvermiinformacionMousePressed
+        VerMiInformacion obj = new VerMiInformacion();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_mvermiinformacionMousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -193,9 +193,7 @@ public class Menu_principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenu mcambiarpassword;
     private javax.swing.JMenu mcargarpartida;
-    private javax.swing.JMenu mcerrarmicuenta;
     private javax.swing.JMenu meliminarpartida;
     private javax.swing.JMenu mjugarchaturanga;
     private javax.swing.JMenu mlogout;

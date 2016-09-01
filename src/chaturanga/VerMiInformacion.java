@@ -57,6 +57,7 @@ public class VerMiInformacion extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setFont(new java.awt.Font("Cooper Black", 3, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/popup_close_button.png"))); // NOI18N
         jButton1.setText("CERRAR MI CUENTA");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -69,7 +70,7 @@ public class VerMiInformacion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(620, 460, 210, 40);
+        jButton1.setBounds(610, 460, 220, 40);
 
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setFont(new java.awt.Font("Cooper Black", 3, 10)); // NOI18N
@@ -87,7 +88,6 @@ public class VerMiInformacion extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setFont(new java.awt.Font("Cooper Black", 3, 12)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\USUARIO1\\Documents\\chaturanga pieces\\ImangTitulo\\twitter.png")); // NOI18N
         jButton3.setText("     CONECTAR ");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
