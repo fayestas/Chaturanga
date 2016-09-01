@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
  *
  * @author Frances
  */
-public abstract class Ficha {
+public class Ficha {
     
     String color;
     ArrayList<String> capturas = new ArrayList<>();
@@ -20,6 +20,10 @@ public abstract class Ficha {
     
     public Ficha(ImageIcon i){
         img = new ImageIcon(i.getImage());
+    }
+
+    public ImageIcon getImg() {
+        return img;
     }
     
     
