@@ -52,6 +52,11 @@ public class Menu_principal extends javax.swing.JFrame {
 
         mnuevapartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/-pawns.gif"))); // NOI18N
         mnuevapartida.setText("Nueva Partida");
+        mnuevapartida.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                mnuevapartidaMousePressed(evt);
+            }
+        });
         mjugarchaturanga.add(mnuevapartida);
 
         mcargarpartida.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgmenuprincipal/loading.gif"))); // NOI18N
@@ -152,6 +157,10 @@ public class Menu_principal extends javax.swing.JFrame {
         obj.setVisible(true);
         dispose();
     }//GEN-LAST:event_mvermiinformacionMousePressed
+
+    private void mnuevapartidaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnuevapartidaMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnuevapartidaMousePressed
 
     /**
      * @param args the command line arguments

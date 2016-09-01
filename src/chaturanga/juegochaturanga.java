@@ -27,28 +27,279 @@ public class juegochaturanga extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        l00 = new javax.swing.JLabel();
+        l01 = new javax.swing.JLabel();
+        l02 = new javax.swing.JLabel();
+        l03 = new javax.swing.JLabel();
+        l04 = new javax.swing.JLabel();
+        l05 = new javax.swing.JLabel();
+        l06 = new javax.swing.JLabel();
+        l07 = new javax.swing.JLabel();
+        l10 = new javax.swing.JLabel();
+        l11 = new javax.swing.JLabel();
+        l12 = new javax.swing.JLabel();
+        l13 = new javax.swing.JLabel();
+        l14 = new javax.swing.JLabel();
+        l15 = new javax.swing.JLabel();
+        l16 = new javax.swing.JLabel();
+        l17 = new javax.swing.JLabel();
+        l20 = new javax.swing.JLabel();
+        l21 = new javax.swing.JLabel();
+        l22 = new javax.swing.JLabel();
+        l23 = new javax.swing.JLabel();
+        l24 = new javax.swing.JLabel();
+        l25 = new javax.swing.JLabel();
+        l26 = new javax.swing.JLabel();
+        l27 = new javax.swing.JLabel();
+        l30 = new javax.swing.JLabel();
+        l31 = new javax.swing.JLabel();
+        l32 = new javax.swing.JLabel();
+        l33 = new javax.swing.JLabel();
+        l34 = new javax.swing.JLabel();
+        l35 = new javax.swing.JLabel();
+        l36 = new javax.swing.JLabel();
+        l37 = new javax.swing.JLabel();
+        l40 = new javax.swing.JLabel();
+        l41 = new javax.swing.JLabel();
+        l42 = new javax.swing.JLabel();
+        l43 = new javax.swing.JLabel();
+        l44 = new javax.swing.JLabel();
+        l45 = new javax.swing.JLabel();
+        l46 = new javax.swing.JLabel();
+        l47 = new javax.swing.JLabel();
+        l50 = new javax.swing.JLabel();
+        l51 = new javax.swing.JLabel();
+        l52 = new javax.swing.JLabel();
+        l53 = new javax.swing.JLabel();
+        l54 = new javax.swing.JLabel();
+        l55 = new javax.swing.JLabel();
+        l56 = new javax.swing.JLabel();
+        l57 = new javax.swing.JLabel();
+        l60 = new javax.swing.JLabel();
+        l61 = new javax.swing.JLabel();
+        l62 = new javax.swing.JLabel();
+        l63 = new javax.swing.JLabel();
+        l64 = new javax.swing.JLabel();
+        l65 = new javax.swing.JLabel();
+        l66 = new javax.swing.JLabel();
+        l67 = new javax.swing.JLabel();
+        l70 = new javax.swing.JLabel();
+        l71 = new javax.swing.JLabel();
+        l72 = new javax.swing.JLabel();
+        l73 = new javax.swing.JLabel();
+        l74 = new javax.swing.JLabel();
+        l75 = new javax.swing.JLabel();
+        l76 = new javax.swing.JLabel();
+        l77 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/board.png"))); // NOI18N
+        jPanel1.setOpaque(false);
+        jPanel1.setPreferredSize(new java.awt.Dimension(512, 512));
+        jPanel1.setLayout(new java.awt.GridLayout(8, 8));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jLabel2)
-                .addContainerGap(925, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel2)
-                .addContainerGap(45, Short.MAX_VALUE))
-        );
+        l00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l00);
+
+        l01.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l01);
+
+        l02.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l02);
+
+        l03.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l03);
+
+        l04.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l04);
+
+        l05.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l05);
+
+        l06.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l06);
+
+        l07.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l07);
+
+        l10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l10);
+
+        l11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l11);
+
+        l12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l12);
+
+        l13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l13);
+
+        l14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l14);
+
+        l15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l15);
+
+        l16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l16);
+
+        l17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l17);
+
+        l20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l20);
+
+        l21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l21);
+
+        l22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l22);
+
+        l23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l23);
+
+        l24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l24);
+
+        l25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l25);
+
+        l26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l26);
+
+        l27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l27);
+
+        l30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l30);
+
+        l31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l31);
+
+        l32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l32);
+
+        l33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l33);
+
+        l34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l34);
+
+        l35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l35);
+
+        l36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l36);
+
+        l37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l37);
+
+        l40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l40);
+
+        l41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l41);
+
+        l42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l42);
+
+        l43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l43);
+
+        l44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l44);
+
+        l45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l45);
+
+        l46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l46);
+
+        l47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l47);
+
+        l50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l50);
+
+        l51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l51);
+
+        l52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l52);
+
+        l53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l53);
+
+        l54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l54);
+
+        l55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l55);
+
+        l56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l56);
+
+        l57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l57);
+
+        l60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l60);
+
+        l61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l61);
+
+        l62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l62);
+
+        l63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l63);
+
+        l64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l64);
+
+        l65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l65);
+
+        l66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l66);
+
+        l67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l67);
+
+        l70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l70);
+
+        l71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l71);
+
+        l72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l72);
+
+        l73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l73);
+
+        l74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l74);
+
+        l75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l75);
+
+        l76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l76);
+
+        l77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BlackKing.png"))); // NOI18N
+        jPanel1.add(l77);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(20, 20, 512, 512);
+
+        jLabel66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/board.png"))); // NOI18N
+        jLabel66.setText("jLabel66");
+        getContentPane().add(jLabel66);
+        jLabel66.setBounds(20, 20, 512, 512);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -89,6 +340,71 @@ public class juegochaturanga extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel l00;
+    private javax.swing.JLabel l01;
+    private javax.swing.JLabel l02;
+    private javax.swing.JLabel l03;
+    private javax.swing.JLabel l04;
+    private javax.swing.JLabel l05;
+    private javax.swing.JLabel l06;
+    private javax.swing.JLabel l07;
+    private javax.swing.JLabel l10;
+    private javax.swing.JLabel l11;
+    private javax.swing.JLabel l12;
+    private javax.swing.JLabel l13;
+    private javax.swing.JLabel l14;
+    private javax.swing.JLabel l15;
+    private javax.swing.JLabel l16;
+    private javax.swing.JLabel l17;
+    private javax.swing.JLabel l20;
+    private javax.swing.JLabel l21;
+    private javax.swing.JLabel l22;
+    private javax.swing.JLabel l23;
+    private javax.swing.JLabel l24;
+    private javax.swing.JLabel l25;
+    private javax.swing.JLabel l26;
+    private javax.swing.JLabel l27;
+    private javax.swing.JLabel l30;
+    private javax.swing.JLabel l31;
+    private javax.swing.JLabel l32;
+    private javax.swing.JLabel l33;
+    private javax.swing.JLabel l34;
+    private javax.swing.JLabel l35;
+    private javax.swing.JLabel l36;
+    private javax.swing.JLabel l37;
+    private javax.swing.JLabel l40;
+    private javax.swing.JLabel l41;
+    private javax.swing.JLabel l42;
+    private javax.swing.JLabel l43;
+    private javax.swing.JLabel l44;
+    private javax.swing.JLabel l45;
+    private javax.swing.JLabel l46;
+    private javax.swing.JLabel l47;
+    private javax.swing.JLabel l50;
+    private javax.swing.JLabel l51;
+    private javax.swing.JLabel l52;
+    private javax.swing.JLabel l53;
+    private javax.swing.JLabel l54;
+    private javax.swing.JLabel l55;
+    private javax.swing.JLabel l56;
+    private javax.swing.JLabel l57;
+    private javax.swing.JLabel l60;
+    private javax.swing.JLabel l61;
+    private javax.swing.JLabel l62;
+    private javax.swing.JLabel l63;
+    private javax.swing.JLabel l64;
+    private javax.swing.JLabel l65;
+    private javax.swing.JLabel l66;
+    private javax.swing.JLabel l67;
+    private javax.swing.JLabel l70;
+    private javax.swing.JLabel l71;
+    private javax.swing.JLabel l72;
+    private javax.swing.JLabel l73;
+    private javax.swing.JLabel l74;
+    private javax.swing.JLabel l75;
+    private javax.swing.JLabel l76;
+    private javax.swing.JLabel l77;
     // End of variables declaration//GEN-END:variables
 }

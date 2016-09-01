@@ -22,6 +22,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Nueva Partida"/>
               </Properties>
+              <Events>
+                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mnuevapartidaMousePressed"/>
+              </Events>
             </Menu>
             <Menu class="javax.swing.JMenu" name="mcargarpartida">
               <Properties>
