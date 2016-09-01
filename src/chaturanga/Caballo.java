@@ -13,8 +13,8 @@ import javax.swing.ImageIcon;
  */
 public class Caballo extends Ficha {
     
-    public Caballo(){
-        super(new ImageIcon("URL"));
+    public Caballo(int fila){
+        super(new ImageIcon((fila==0?"imagenes/Blackknight.png":"imagenes/WhiteKnight.png")));
     }
     
 }

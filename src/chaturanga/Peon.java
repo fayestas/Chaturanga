@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
 public class Peon extends Ficha{
     
     public Peon(int fila){
-        super(new ImageIcon((fila==1?"BlackPawn.png":"WhitePawn.png")));
+        super(new ImageIcon((fila==1?"imagenes/BlackPawn.png":"imagenes/WhitePawn.png")));
     }
     
 }

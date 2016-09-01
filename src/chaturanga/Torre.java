@@ -13,8 +13,8 @@ import javax.swing.ImageIcon;
  */
 public class Torre extends Ficha {
     
-    public Torre(){
-        super(new ImageIcon("URL"));
+    public Torre(int fila){
+        super(new ImageIcon((fila==0?"imagenes/BlackRook.png":"imagenes/WhiteRook.png")));
     }
     
 }
