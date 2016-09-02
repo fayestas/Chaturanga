@@ -17,17 +17,24 @@ public class Ficha {
     String color;
     ArrayList<String> capturas = new ArrayList<>();
     ImageIcon img=null;
-    
-    public Ficha(ImageIcon i){
+    String nombre="";
+    public Ficha(ImageIcon i,String n){
         img = new ImageIcon(i.getImage());
+        nombre=n;
     }
     public Ficha(){
         img=null;
+        nombre="vacio";
     }
 
     public ImageIcon getImg() {
         return img;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
     
     
     

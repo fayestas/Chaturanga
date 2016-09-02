@@ -17,6 +17,12 @@ public class Tablero {
         setPeones();
         setOtras();
         setVacias();
+        for(int f=0;f<8;f++){
+            for(int c=0;c<8;c++){
+                System.out.print(tablero[f][c].getNombre()+"-");
+            }
+            System.out.println("");
+        }
         return true;
     }
     
@@ -24,11 +30,13 @@ public class Tablero {
         int fila = 1;
         for(int c=0; c<8; c++){
             tablero[fila][c] = new Peon(fila);
-            if(c==7 && fila==1){
-                c=0;
-                fila=6;
-            }
+            
         }
+        fila=6;
+        for(int c=0; c<8; c++){
+            tablero[6][c] = new Peon(6);
+        }
+        
     }
     
     public void setOtras(){
@@ -42,16 +50,21 @@ public class Tablero {
     
     public void setAddOtras(){
         int f=0;
+        tablero[f][0] = new Torre(f);
+        tablero[f][1] = new Caballo(f);
+        tablero[f][2] = new Elefante(f);
+        tablero[f][5] = new Elefante(f);
+        tablero[f][6] = new Caballo(f);
+        tablero[f][7] = new Torre(f);
+        f=7;
+        tablero[f][0] = new Torre(f);
+        tablero[f][1] = new Caballo(f);
+        tablero[f][2] = new Elefante(f);
+        tablero[f][5] = new Elefante(f);
+        tablero[f][6] = new Caballo(f);
+        tablero[f][7] = new Torre(f);
+            
         
-        do{
-            tablero[f][0] = new Torre(f);
-            tablero[f][1] = new Caballo(f);
-            tablero[f][2] = new Elefante(f);
-            tablero[f][5] = new Elefante(f);
-            tablero[f][6] = new Caballo(f);
-            tablero[f][7] = new Torre(f);
-            f=7;
-        }while(f!=7);
         
     }
     
