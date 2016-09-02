@@ -5,6 +5,8 @@
  */
 package chaturanga;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Frances
@@ -69,6 +71,9 @@ public class CrearPlayer extends javax.swing.JFrame {
         btncplayerguardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btncplayerguardarMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btncplayerguardarMousePressed(evt);
             }
         });
         btncplayerguardar.addActionListener(new java.awt.event.ActionListener() {
@@ -135,18 +140,22 @@ public class CrearPlayer extends javax.swing.JFrame {
         char[] contra=txtcplayercontraseña.getPassword();
         
         if(nombre.equalsIgnoreCase(""))
-            System.out.println("Debe Ingresar un Nombre de Usuario");
+            JOptionPane.showMessageDialog(null, "\"Debe Ingresar un Nombre de Usuario\"");
         else{
         if(users.buscar(txtcplayernombre.getText())==null){
             if(contra.length==5){
                 users.players.add(new Usuario(nombre,contra));
+                JOptionPane.showMessageDialog(null, "\"Usuario Creado Exitosamente\"");
+                Menu_inicio obj = new Menu_inicio();
+                obj.setVisible(true);
+                dispose();
             }
             else{
-                System.out.println("la contraseña debe ser de 5 caracteres");
+                JOptionPane.showMessageDialog(null, "\"La Contraseña Debe Ser De 5 Caracteres\"");
             }
         }
         else
-            System.out.println("el nombre ingresado ya existe");
+            JOptionPane.showMessageDialog(null, "\"El Nombre de Usuario Ingresado ya Existe\"");
         }
     }//GEN-LAST:event_btncplayerguardarMouseClicked
 
@@ -164,6 +173,10 @@ public class CrearPlayer extends javax.swing.JFrame {
     private void txtcplayercontraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcplayercontraseñaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtcplayercontraseñaActionPerformed
+
+    private void btncplayerguardarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btncplayerguardarMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btncplayerguardarMousePressed
 
     /**
      * @param args the command line arguments

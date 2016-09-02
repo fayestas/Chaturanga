@@ -6,6 +6,7 @@
 package chaturanga;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,6 +14,7 @@ import java.util.ArrayList;
  */
 public class Usuarios {
     ArrayList<Usuario> players = new ArrayList<>();
+    
     
     public Usuario buscar(String nombre){
         for(Usuario e: players){
@@ -22,4 +24,6 @@ public class Usuarios {
         }
         return null;
     }
+   
+    
 }
