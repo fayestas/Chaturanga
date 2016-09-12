@@ -6,6 +6,7 @@
 package chaturanga;
 
 import java.awt.Component;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 /**
@@ -317,9 +318,12 @@ public class juegochaturanga extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
         tab.setFichas();
+        
         int f = 0, c = 0;
-        for( Component e:jPanel1.getComponents())
-            ((JLabel)e).setIcon(Tablero.tablero[f][c].getImg());
+        for( Component e:jPanel1.getComponents()){
+           // ImageIcon img=Tablero.tablero[f][c].getImg();
+            if(Tablero.tablero[f][c].getImg()!=null){((JLabel)e).setIcon(Tablero.tablero[f][c].getImg());}
+            
         if(c==7){
             c=0;
             f++;
@@ -328,7 +332,7 @@ public class juegochaturanga extends javax.swing.JFrame {
             c++;
         }
     }//GEN-LAST:event_formWindowOpened
-
+    }
     /**
      * @param args the command line arguments
      */

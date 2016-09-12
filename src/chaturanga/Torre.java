@@ -14,7 +14,7 @@ import javax.swing.ImageIcon;
 public class Torre extends Ficha {
     
     public Torre(int fila){
-        super(new ImageIcon((fila==0?"imagenes/BlackRook.png":"imagenes/WhiteRook.png")));
+        super(fila==0?"/imagenes/BlackRook.png":"/imagenes/WhiteRook.png");
     }
     
 }

@@ -16,13 +16,12 @@ public class Ficha {
     
     String color;
     ArrayList<String> capturas = new ArrayList<>();
-    ImageIcon img=null;
-    
-    public Ficha(ImageIcon i){
-        img = new ImageIcon(i.getImage());
+    ImageIcon img =new ImageIcon("");
+    public Ficha(String i){
+        img = new ImageIcon(getClass().getResource(i));
     }
     public Ficha(){
-        img=null;
+        img=new ImageIcon("");
     }
 
     public ImageIcon getImg() {

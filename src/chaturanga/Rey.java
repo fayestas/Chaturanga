@@ -14,7 +14,7 @@ import javax.swing.ImageIcon;
 public class Rey extends Ficha {
     
     public Rey(int fila){
-        super(new ImageIcon((fila==0?"imagenes/BlackKing.png":"imagenes/WhiteKing.png")));
+        super(fila==0?"/imagenes/BlackKing.png":"/imagenes/WhiteKing.png");
     }
     
 }
