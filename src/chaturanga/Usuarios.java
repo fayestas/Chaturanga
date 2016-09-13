@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,7 +14,8 @@ import javax.swing.JOptionPane;
  * @author USER1
  */
 public class Usuarios {
-    ArrayList<Usuario> players = new ArrayList<>();
+    
+    public static ArrayList<Usuario> players = new ArrayList<>();
     
     
     public Usuario buscar(String nombre){

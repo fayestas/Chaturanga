@@ -10,12 +10,17 @@ package chaturanga;
  * @author USER1
  */
 public class Usuario {
+    
     public String nombre;
     public String contraseña;
 
     public Usuario(String nombre, char[] contraseña) {
         this.nombre = nombre;
         this.contraseña = String.valueOf(contraseña);
+    }
+
+    Usuario() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

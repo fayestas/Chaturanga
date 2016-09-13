@@ -121,7 +121,7 @@ public class LogIn extends javax.swing.JFrame {
         Usuario u = users.buscar(txtloginnombre.getText());
         
         if(u!=null){
-            if(u.getNombre().equals(String.valueOf(txtlogincontraseña.getPassword()))){
+            if(u.getContraseña().equals(String.valueOf(txtlogincontraseña.getPassword()))){
                 Menu_principal obj = new Menu_principal();
                 obj.setVisible(true);
                 dispose();
