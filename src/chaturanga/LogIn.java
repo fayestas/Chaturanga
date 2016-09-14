@@ -5,6 +5,8 @@
  */
 package chaturanga;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Frances
@@ -115,25 +117,35 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_txtloginnombreActionPerformed
 
     private void btnloginguardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnloginguardarMouseClicked
-        // TODO add your handling code here:
+          
         Usuario u = users.buscar(txtloginnombre.getText());
         
         if(u!=null){
-            if(u.getNombre().equals(String.valueOf(txtlogincontraseña.getPassword()))){
+            if(u.getContraseña().equals(String.valueOf(txtlogincontraseña.getPassword()))){
                 Menu_principal obj = new Menu_principal();
                 obj.setVisible(true);
                 dispose();
             }
             else{
-                System.out.println("Contraseña Incorrecta");
+                JOptionPane.showMessageDialog(null,"Contraseña Incorrecta, Intente Nuevamente","Error",JOptionPane.ERROR_MESSAGE);
                 }
             }
             else{
-  
-             System.out.println("Usuario no Existe");
-            }
+              JOptionPane.showMessageDialog(null,"Usuario No Existe, Intente Nuevamente o Cree un Usuario","Error",JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_btnloginguardarMouseClicked
 
+//    public boolean loginUser(String username, String password){
+//        Player p =buscarUser(username);
+//        if (p!=null){
+//            if(p.getPassword().equals(password)){
+//                JOptionPane.showMessageDialog(null, "¡Bienvenido: "+username+"!");
+//                return true;
+//            }
+//        }
+//        JOptionPane.showMessageDialog(null, "¡El usuario: "+username+" no existe por favor cree el nuevo jugador!");
+//        return false;
+//    }
     private void btnlogincancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlogincancelarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnlogincancelarActionPerformed

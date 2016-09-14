@@ -16,17 +16,34 @@ public class Ficha {
     
     String color;
     ArrayList<String> capturas = new ArrayList<>();
+<<<<<<< HEAD
     ImageIcon img =new ImageIcon("");
     public Ficha(String i){
         img = new ImageIcon(getClass().getResource(i));
     }
     public Ficha(){
         img=new ImageIcon("");
+=======
+    ImageIcon img=null;
+    String nombre="";
+    public Ficha(ImageIcon i,String n){
+        img = new ImageIcon(i.getImage());
+        nombre=n;
+    }
+    public Ficha(){
+        img=null;
+        nombre="vacio";
+>>>>>>> origin/master
     }
 
     public ImageIcon getImg() {
         return img;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
     
     
     

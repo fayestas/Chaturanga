@@ -28,8 +28,13 @@ public class Tablero {
         fila=6;
         for(int c=0; c<8; c++){
             tablero[fila][c] = new Peon(fila);
-           
+
         }
+        fila=6;
+        for(int c=0; c<8; c++){
+            tablero[6][c] = new Peon(6);
+        }
+        
     }
     
     public void setOtras(){
@@ -43,6 +48,7 @@ public class Tablero {
     
     public void setAddOtras(){
         int f=0;
+
             tablero[f][0] = new Torre(f);
             tablero[f][1] = new Caballo(f);
             tablero[f][2] = new Elefante(f);
@@ -56,6 +62,7 @@ public class Tablero {
             tablero[f][5] = new Elefante(f);
             tablero[f][6] = new Caballo(f);
             tablero[f][7] = new Torre(f);
+
         
     }
     

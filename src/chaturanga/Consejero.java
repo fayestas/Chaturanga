@@ -14,6 +14,8 @@ import javax.swing.ImageIcon;
 public class Consejero extends Ficha {
     
     public Consejero(int fila){
+
         super(fila==0?"/imagenes/BlackConsejero.png":"/imagenes/WhiteConsejero.png");
+
     }
 }

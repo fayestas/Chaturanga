@@ -13,7 +13,9 @@ import javax.swing.ImageIcon;
 public class Peon extends Ficha{
     
     public Peon(int fila){
+
         super(fila==1?"/imagenes/BlackPawn.png":"/imagenes/WhitePawn.png");
+
     }
     
 }

@@ -14,6 +14,10 @@ import javax.swing.ImageIcon;
 public class Elefante extends Ficha {
     
     public Elefante(int fila){
+<<<<<<< HEAD
         super(fila==0?"/imagenes/BlackElephant.png":"/imagenes/WhiteElephant.png");
+=======
+        super(new ImageIcon((fila==0?"imagenes/BlackElephant.png":"imagenes/WhiteElephnat.png")),fila==0?"imagenes/BlackElephant.png":"imagenes/WhiteElephnat.png");
+>>>>>>> origin/master
     }
 }
